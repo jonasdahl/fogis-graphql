@@ -18,6 +18,8 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "start": "nodemon --exec ts-node --files src/index.ts --watch src"
+    "start": "nodemon --exec ts-node --files src/index.ts --watch src",
+    "build": "tsc",
+    "serve": "yarn node dist/index.js"
   }
 }
