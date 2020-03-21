@@ -2,5 +2,22 @@
   "name": "fogis",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/jsdom": "^16.1.0",
+    "@types/node": "^13.9.2",
+    "@types/node-fetch": "^2.5.5",
+    "@yarnpkg/pnpify": "^2.0.0-rc.19",
+    "apollo-server": "^2.11.0",
+    "date-fns": "^2.11.0",
+    "graphql": "^14.6.0",
+    "jsdom": "^16.2.1",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.7.0",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start": "nodemon --exec ts-node --files src/index.ts --watch src"
+  }
 }
