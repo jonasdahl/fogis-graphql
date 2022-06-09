@@ -23,6 +23,8 @@ const server = new ApolloServer({
       const matches = text.match(/^(.*?):(.*)$/)
       if (matches && matches[1] && matches[2]) {
         return { principal: { username: matches[1], password: matches[2] } }
+      } else {
+        console.error('Failed login', match, text, matches)
       }
     } catch (e) {
       console.log('Could not parse basic auth token.', e)
